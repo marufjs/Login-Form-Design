@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to right, #24b0e7, #9437e0);
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+        }
+        form{
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 25px;
+        }
+        .input-field label{
+            display: block;
+            color: black;
+            padding-top: 10px;
+        }
+        .input-field input{
+            width: 100%;
+            font-size: 20px;
+            padding: 5px 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        .forgot{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            color: dodgerblue;
+        }
+        button{
+            border: none;
+            border-radius: 3px;
+            outline: none;
+            margin: 20px 0;
+            background: linear-gradient(to right, #24b0e7, #9437e0);
+            width: 100%;
+            padding: 5px 10px;
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .signup{
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="title">
+                <h1>Login Form</h1>
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" required>
+                <label for="password">Password</label>
+                <input type="password" required>
+            </div>
+            <a class="forgot" href="#">Forgot Password?</a>
+            <button type="button">Login</button>
+            <div class="signup">
+                <span>Not a member?</span>
+                <a href="#">Signup now</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
